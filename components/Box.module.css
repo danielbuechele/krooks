@@ -1,0 +1,11 @@
+.container {
+  padding: 20px;
+  margin-bottom: 20px;
+
+  background: #8e5795;
+  border: 2px solid #f2c1df;
+  box-shadow: 4px 4px 0px rgba(8, 23, 48, 0.5);
+}
+
+.container h4 {
+}

@@ -1,0 +1,10 @@
+.container {
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.container img {
+  min-width: 100%;
+}

@@ -1,9 +1,23 @@
+@font-face {
+  font-family: "Pixel Operator";
+  font-weight: normal;
+  src: url("/PixelOperator.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Pixel Operator";
+  font-weight: bold;
+  src: url("/PixelOperator-Bold.ttf") format("ttf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: white;
+  font-family: "Pixel Operator";
+  background-color: #5382ed;
+  font-size: 22px;
 }
 
 a {
@@ -13,4 +27,21 @@ a {
 
 * {
   box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+hgroup h3 {
+  font-size: 42px;
+}
+
+hgroup h4 {
+  color: #9bd35b;
+  font-size: 20px;
 }
