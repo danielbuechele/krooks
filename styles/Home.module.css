@@ -14,6 +14,11 @@
   margin: 0;
 }
 
+.heroButtons {
+  margin: 100px 0;
+  justify-content: center;
+}
+
 .about {
   background: #2055b4;
   padding-bottom: 120px;
@@ -22,8 +27,15 @@
 
 .krookenomics {
   background-color: #12326a;
+
+  background-image: url("/about.png"),
+    linear-gradient(#2055b4 0px, transparent 100px);
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: auto 100px;
+
   padding-bottom: 120px;
-  padding-top: 120px;
+  padding-top: 160px;
 }
 
 .row {
@@ -34,6 +46,9 @@
 
 .krookenomics h3 {
   color: #6b96f6;
+}
+.krookenomicsLogo {
+  max-width: 430px;
 }
 
 .faq {

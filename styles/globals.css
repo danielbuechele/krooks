@@ -1,13 +1,17 @@
 @font-face {
   font-family: "Pixel Operator";
+  src: url("/PixelOperator.woff2") format("woff2");
   font-weight: normal;
-  src: url("/PixelOperator.ttf") format("ttf");
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Pixel Operator";
+  src: url("/PixelOperator-Bold.woff2") format("woff2");
   font-weight: bold;
-  src: url("/PixelOperator-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-display: swap;
 }
 
 html,
@@ -16,8 +20,14 @@ body {
   margin: 0;
   color: white;
   font-family: "Pixel Operator";
-  background-color: #5382ed;
+  background-color: #6591f4;
   font-size: 22px;
+  background-image: url("/header.png"),
+    linear-gradient(#5382ed 0px, transparent 250px);
+  image-rendering: pixelated;
+  background-size: auto 250px;
+  background-repeat: repeat-x;
+  background-position-y: 0;
 }
 
 a {
@@ -44,4 +54,21 @@ hgroup h3 {
 hgroup h4 {
   color: #9bd35b;
   font-size: 20px;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  background-image: url("/hr.png");
+  background-size: auto 100%;
+  image-rendering: pixelated;
+  margin: 50px 0;
 }

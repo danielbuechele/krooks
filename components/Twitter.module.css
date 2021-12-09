@@ -1,0 +1,7 @@
+.logo svg {
+  fill: #2055b4;
+}
+
+.logo:hover svg {
+  fill: white;
+}

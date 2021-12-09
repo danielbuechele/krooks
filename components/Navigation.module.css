@@ -1,9 +1,11 @@
 .container {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+.ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
