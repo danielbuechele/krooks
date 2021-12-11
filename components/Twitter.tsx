@@ -2,7 +2,12 @@ import styles from "./Twitter.module.css";
 
 export default function Twitter({ fill }: { fill?: string }) {
   return (
-    <a href="" target="_blank" className={styles.logo}>
+    <a
+      href="https://twitter.com/KrooksSol"
+      target="_blank"
+      className={styles.logo}
+      rel="noreferrer"
+    >
       <svg
         width="30"
         height="24"

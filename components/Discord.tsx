@@ -2,7 +2,12 @@ import styles from "./Twitter.module.css";
 
 export default function Discord({ fill }: { fill?: string }) {
   return (
-    <a href="" target="_blank" className={styles.logo}>
+    <a
+      href="http://discord.gg/9gcv4dBetm"
+      target="_blank"
+      className={styles.logo}
+      rel="noreferrer"
+    >
       <svg
         width="31"
         height="24"

@@ -34,8 +34,8 @@ const Home: NextPage = () => {
         <h1>Welcome to the Krooks!</h1>
         <h2>An collection of 1,131 Krook NFTs on the Solana Blockchain</h2>
         <Row className={styles.heroButtons} gap={20}>
-          <Button label="Discord" href="" />
-          <Button label="Twitter" href="" />
+          <Button label="Discord" href="http://discord.gg/9gcv4dBetm" />
+          <Button label="Twitter" href="https://twitter.com/KrooksSol" />
         </Row>
       </Wrapper>
 

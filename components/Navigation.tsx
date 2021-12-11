@@ -21,7 +21,13 @@ export default function Navigation() {
         <Row center gap={16}>
           <ul className={styles.ul}>
             <li>
-              <a href="">Rarities</a>
+              <a
+                href="https://moonrank.app/collection/krooks"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Rarities
+              </a>
             </li>
             <li>
               <DropdownMenu.Root>
@@ -31,10 +37,22 @@ export default function Navigation() {
                 <DropdownMenu.Content className={styles.menu} align="end">
                   <Box>
                     <DropdownMenu.Item className={styles.item}>
-                      <a href="">Magic Eden</a>
+                      <a
+                        href="https://magiceden.io/marketplace/the_krooks"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Magic Eden
+                      </a>
                     </DropdownMenu.Item>
                     <DropdownMenu.Item className={styles.item}>
-                      <a href="">Alpha Art</a>
+                      <a
+                        href="https://alpha.art/collection/the-krooks"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Alpha Art
+                      </a>
                     </DropdownMenu.Item>
                   </Box>
                 </DropdownMenu.Content>

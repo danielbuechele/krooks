@@ -7,5 +7,14 @@ export default function Button({
   label: string;
   href: string;
 }) {
-  return <button className={`${styles.container}`}>{label}</button>;
+  return (
+    <a
+      target="_blank"
+      href={href}
+      className={`${styles.container}`}
+      rel="noreferrer"
+    >
+      {label}
+    </a>
+  );
 }
