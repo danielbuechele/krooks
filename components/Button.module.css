@@ -15,7 +15,7 @@
   border-image-slice: 9;
   border-image-outset: 9px;
 
-  background-color: #84ba47;
+  background-color: #6fbd2d;
   cursor: pointer;
   position: relative;
 }
@@ -23,7 +23,7 @@
 .container:hover,
 .container:active,
 .container:focus {
-  background-color: #73a23d;
+  background-color: #61a526;
   border-image-source: url("/button-hover.png");
   outline-offset: 8px;
 }

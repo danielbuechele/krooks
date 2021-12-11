@@ -90,11 +90,19 @@
   background-color: #081730;
   padding-bottom: 120px;
   padding-top: 120px;
+  background-image: url("/gradient3.svg"),
+    linear-gradient(#12326a 0px, #081730 100%);
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: auto 105px;
+
+  padding-bottom: 120px;
+  padding-top: 160px;
 }
 
 @media screen and (max-width: 767px) {
   .faq {
-    padding-bottom: 0px;
+    padding-bottom: 80px;
     padding-top: 80px;
   }
 }
@@ -154,6 +162,7 @@ div .henchmenBox {
   align-self: stretch;
   align-items: center;
   position: relative;
+  min-width: 187px;
 }
 
 .henchmenBox::after {
@@ -188,6 +197,7 @@ div .henchmenBox {
 
 div .supplyBox {
   align-self: stretch;
+  min-width: 157px;
 }
 
 .supplyBoxInner {

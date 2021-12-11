@@ -66,14 +66,9 @@ li {
 hr {
   height: 12px;
   border: 0;
-  /* background-image: url("/hr.png"); */
-  /* background-size: auto 100%; */
-  /* image-rendering: pixelated; */
-  border-top: 4px dotted #2f5b58;
-  border-bottom: 4px dotted #2f5b58;
-  height: 0;
+  background-image: url("/hr.png");
+  height: 8px;
   margin: 60px 0;
-  /* border-image-slice: 4 0 0 0; */
 }
 
 button {
