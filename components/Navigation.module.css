@@ -2,10 +2,38 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 0;
+  margin-bottom: 80px;
 }
 
 .ul {
   display: flex;
   flex-direction: row;
   gap: 16px;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+.menu {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.trigger {
+  cursor: pointer;
+}
+
+.item {
+  padding: 10px 15px;
+  border-top: 2px dotted #6b96f6;
+}
+
+.item:focus,
+.item:active {
+  background-color: #6b96f6;
+  outline: 0;
+}
+
+.item:first-child {
+  border-top: none;
 }

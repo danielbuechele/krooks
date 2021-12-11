@@ -1,11 +1,31 @@
 .container {
-  padding: 20px;
-  margin-bottom: 20px;
-
-  background: #8e5795;
-  border: 2px solid #f2c1df;
-  box-shadow: 4px 4px 0px rgba(8, 23, 48, 0.5);
+  border-style: solid;
+  border-width: 6px 9px 9px 6px;
+  border-image-repeat: repeat;
+  border-image-slice: 6 9 9 6;
+  position: relative;
+  border-image-outset: 6px 9px 9px 6px;
+  margin: 6px 9px 9px 6px;
+  display: flex;
 }
 
-.container h4 {
+.inner {
+  margin: -10px -13px -13px -10px;
+  clip-path: polygon(
+    0% 4px,
+    4px 4px,
+    4px 0,
+    calc(100% - 4px) 0,
+    calc(100% - 4px) 4px,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    4px calc(100% - 4px),
+    0% calc(100% - 4px)
+  );
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }

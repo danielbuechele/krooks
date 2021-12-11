@@ -1,16 +1,33 @@
 import styles from "./Box.module.css";
 
+const backgroundMap = {
+  blue: "#1a4796",
+  red: "#8e5795",
+  purple: "#3b3e78",
+};
+
 export default function Box({
-  title,
   children,
+  className,
+  color = "blue",
+  padding,
 }: {
-  title?: string;
+  className?: string;
   children: any;
+  color?: "blue" | "red" | "purple";
+  padding?: number | string;
 }) {
   return (
-    <div className={`${styles.container}`}>
-      {title && <h4>{title}</h4>}
-      {children}
+    <div
+      style={{
+        backgroundColor: backgroundMap[color],
+        borderImageSource: `url("/border-${color}.png")`,
+      }}
+      className={`${styles.container} ${className ?? ""}`}
+    >
+      <div className={styles.inner} style={{ padding }}>
+        {children}
+      </div>
     </div>
   );
 }

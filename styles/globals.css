@@ -70,5 +70,13 @@ hr {
   background-image: url("/hr.png");
   background-size: auto 100%;
   image-rendering: pixelated;
-  margin: 50px 0;
+  margin: 60px 0;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  padding: auto;
+  background: initial;
+  border: initial;
 }

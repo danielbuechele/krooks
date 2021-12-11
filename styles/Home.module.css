@@ -15,7 +15,7 @@
 }
 
 .heroButtons {
-  margin: 100px 0;
+  margin: 80px 0;
   justify-content: center;
 }
 
@@ -44,9 +44,13 @@
   gap: 44px;
 }
 
-.krookenomics h3 {
+.krookenomicsContent h3 {
   color: #6b96f6;
+  font-size: 32px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
+
 .krookenomicsLogo {
   max-width: 430px;
 }
@@ -68,8 +72,103 @@
   color: #6b96f6;
 }
 
+.faq .faqBox p {
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+
+.faq .faqBox p:last-child {
+  margin-bottom: 0px;
+}
+
 .footer {
   background-color: #081730;
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+.roadmap li {
+  padding: 45px 0;
+  border-bottom: 4px dotted #2055b4;
+}
+
+.roadmap li:last-child {
+  border-bottom: none;
+}
+
+.roadmap h4 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+div .henchmenBox {
+  padding-bottom: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+  position: relative;
+}
+
+.henchmenBox::after {
+  position: absolute;
+  color: #e070b2;
+  font-size: 60px;
+  top: 50%;
+  margin-top: -23px;
+  width: 47px;
+  right: -62px;
+  text-align: center;
+  line-height: 43px;
+  height: 46px;
+  pointer-events: none;
+}
+
+.henchmenBox:nth-child(1)::after,
+.henchmenBox:nth-child(2)::after {
+  content: "+";
+}
+
+.henchmenBox:nth-child(3)::after {
+  content: "=";
+}
+
+.henchmenBox h5 {
+  font-weight: normal;
+  font-size: 100%;
+  flex-grow: 1;
+  padding-top: 10px;
+}
+
+div .supplyBox {
+  align-self: stretch;
+}
+
+.supplyBoxInner {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+}
+
+.supplyBoxInner:first-child {
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+div .utilityBox {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.utilityBox p {
+  margin: 0;
+}
+
+.checkmark {
+  flex-shrink: 0;
+}
+
+.dynacmisBottom {
+  margin-bottom: 20px;
 }

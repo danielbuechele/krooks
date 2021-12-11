@@ -7,6 +7,12 @@ import Slider from "../components/Slider";
 import Wrapper from "../components/Wrapper";
 import styles from "../styles/Home.module.css";
 import krookenomics from "../public/krookenomics.png";
+import checkmark from "../public/checkmark.png";
+import checkmarkOff from "../public/checkmarkOff.png";
+import dynamics1 from "../public/dynamics1.png";
+import dynamics2 from "../public/dynamics2.png";
+import dynamics3 from "../public/dynamics3.png";
+import dynamics4 from "../public/dynamics4.png";
 import coin from "../public/coin.png";
 import Box from "../components/Box";
 import Row from "../components/Row";
@@ -54,84 +60,128 @@ const Home: NextPage = () => {
 
       <Wrapper className={styles.krookenomics}>
         <div className={styles.krookenomicsLogo}>
-          <Image {...krookenomics} alt="Krookenomics logo" objectFit="fill" />
+          <Image {...krookenomics} alt="Krookenomics logo" />
         </div>
-        <div className={styles.row}>
-          <div>
-            <p>
-              We will be airdropping 10 KROOK per unlisted KROOK daily. This
-              will begin on December 3rd. During the first week leading up to
-              our first auction we will be doing bonus drops to rewards holders.
-              During the first week leading up to our first auction we will be
-              doing bonus drops like we did this morning in order to increase
-              liquidity.
-            </p>
-            <p>
-              Finally, we will burn 80-90% of krook turned into the rugsino and
-              or auction nfts, the remainder will be used to further develop the
-              project.
-            </p>
-            <p>
-              The 10% staff allocation will be rolled out in stages over the
-              next two years. 0.41% of total pool will be sent to stay per
-              month.
-            </p>
+        <div className={styles.krookenomicsContent}>
+          <div className={styles.row}>
+            <div>
+              <p>
+                We will be airdropping 10 KROOK per unlisted KROOK daily. This
+                will begin on December 3rd. During the first week leading up to
+                our first auction we will be doing bonus drops to rewards
+                holders. During the first week leading up to our first auction
+                we will be doing bonus drops like we did this morning in order
+                to increase liquidity.
+              </p>
+              <p>
+                Finally, we will burn 80-90% of krook turned into the rugsino
+                and or auction nfts, the remainder will be used to further
+                develop the project.
+              </p>
+              <p>
+                The 10% staff allocation will be rolled out in stages over the
+                next two years. 0.41% of total pool will be sent to stay per
+                month.
+              </p>
+            </div>
+            <div style={{ flexShrink: 0 }}>
+              <Image {...coin} alt="KROOK coin" objectFit="fill" />
+            </div>
           </div>
-          <div>
-            <Image {...coin} alt="KROOK coin" />
-          </div>
-        </div>
 
-        <h3>Supply</h3>
-        <Row gap={44} equal>
-          <Box>
-            <strong>1131</strong> Genesis Krooks <strong>40%</strong> 10
-            tokens/day
-          </Box>
-          <Box>
-            Rug Mechanish <strong></strong>30%
-          </Box>
-          <Box>
-            LP Pool <strong>10%</strong>
-          </Box>
-          <Box>
-            Future Development <strong>10%</strong>
-          </Box>
-          <Box>
-            Staff <strong>10%</strong>
-          </Box>
-        </Row>
-        <h3>Utility</h3>
-        <Box title="Community Dynamics">
+          <h3>Supply</h3>
+          <Row gap={20} equal>
+            {[
+              [
+                <>
+                  <strong>1131</strong>
+                  <br />
+                  Genesis Krooks
+                </>,
+                <>
+                  <strong>40%</strong>
+                  <br />
+                  10&nbsp;tokens/day
+                </>,
+              ],
+              ["Rug Mechanish", <strong key="1">30%</strong>],
+              ["LP Pool", <strong key="1">10%</strong>],
+              ["Future Development", <strong key="1">10%</strong>],
+              ["Staff", <strong key="1">10%</strong>],
+            ].map((inner, idx) => (
+              <Box className={styles.supplyBox} key={idx}>
+                {inner.map((i, idx) => (
+                  <div key={idx} className={styles.supplyBoxInner}>
+                    {i}
+                  </div>
+                ))}
+              </Box>
+            ))}
+          </Row>
+          <h3>Utility</h3>
+
+          {[
+            <>
+              <h4>Community Dynamics</h4>
+              <p>
+                Krook Coin is a utility token created to support the Krookverse.
+                The token will be used for bidding and obtaining Krook Specific
+                NFT’s such as banners, lore based NFT’s and some 1/1
+                legendaries!
+              </p>
+            </>,
+            <>
+              <h4>Henchmen</h4>
+              <p>
+                By holding a minimum of 2 Krooks, you can pay a fee in Krook
+                Coins to hire a young henchman. These henchmen will travel
+                around the Krookverse and collect Krook Coin debts. There will
+                be a limited supply of Henchmen and they will be crucial to
+                earning some future rewards!
+              </p>
+            </>,
+          ].map((a, i) => (
+            <Box color="red" className={styles.utilityBox} key={i}>
+              {a}
+            </Box>
+          ))}
+          <h3>Henchmen Dynamics</h3>
+          <Row gap={44} equal>
+            {[
+              <>
+                <h5>1 Krook</h5>
+                <Image {...dynamics1} alt="One Krook" />
+              </>,
+              <>
+                <h5>1 Krook</h5>
+                <Image {...dynamics2} alt="Another Krook" />
+              </>,
+              <>
+                <h5>Krook Coins</h5>
+                <div className={styles.dynacmisBottom}>
+                  <Image {...dynamics3} alt="Krook coins" />
+                </div>
+              </>,
+              <>
+                <h5>Henchmen</h5>
+                <div className={styles.dynacmisBottom}>
+                  <Image {...dynamics4} alt="Henchmen" />
+                </div>
+              </>,
+            ].map((a, i) => (
+              <Box color="purple" className={styles.henchmenBox} key={i}>
+                {a}
+              </Box>
+            ))}
+          </Row>
+          <h3>Governance</h3>
           <p>
-            Krook Coin is a utility token created to support the Krookverse. The
-            token will be used for bidding and obtaining Krook Specific NFT’s
-            such as banners, lore based NFT’s and some 1/1 legendaries!
+            Krook Coins will also be utilized as a tool for community voting,
+            while we will not be setting up the typical DAO users have become
+            accustomed too, we still want to have an active community driven
+            experience.
           </p>
-        </Box>
-        <Box title="Henchmen">
-          <p>
-            By holding a minimum of 2 Krooks, you can pay a fee in Krook Coins
-            to hire a young henchman. These henchmen will travel around the
-            Krookverse and collect Krook Coin debts. There will be a limited
-            supply of Henchmen and they will be crucial to earning some future
-            rewards!
-          </p>
-        </Box>
-        <h3>Henchmen Dynamics</h3>
-        <Row gap={44} equal>
-          <Box>1 Krook</Box>
-          <Box>1 Krook</Box>
-          <Box>Krook Coins</Box>
-          <Box>Henchmen</Box>
-        </Row>
-        <h3>Governance</h3>
-        <p>
-          Krook Coins will also be utilized as a tool for community voting,
-          while we will not be setting up the typical DAO users have become
-          accustomed too, we still want to have an active community driven
-          experience.
-        </p>
+        </div>
 
         <hr />
 
@@ -140,57 +190,52 @@ const Home: NextPage = () => {
           <h3>Roadmap</h3>
         </hgroup>
 
-        <ol>
-          <li>
-            <Row center gap={30}>
-              checkmark
-              <div>
-                <h4>Phase 1</h4>
-                Mint of 1,111 Krooks, Secondary Listing and Grape Verification
-                for Krook holders.
-              </div>
-            </Row>
-          </li>
-
-          <li>
-            <Row center gap={30}>
-              checkmark
-              <div>
-                <h4>Phase 2</h4>
-                Begin KRookenomics token distribution.
-              </div>
-            </Row>
-          </li>
-          <li>
-            <Row center gap={30}>
-              checkmark
-              <div>
-                <h4>Phase 3</h4>
-                Feed your Krook - Find a way to exchange Rugged NFTs for tokens
-                without allowing abuse.
-              </div>
-            </Row>
-          </li>
-          <li>
-            <Row center gap={30}>
-              checkmark
-              <div>
-                <h4>Phase 4</h4>
-                1/1 Auctions with tokens / sol.
-              </div>
-            </Row>
-          </li>
-          <li>
-            <Row center gap={30}>
-              checkmark
-              <div>
-                <h4>Phase 5</h4>
-                Henchmen, Take two Of your krooks and a fee in Krook Coins in
-                order to train a henchman, a younger krook, that will have
-                further utility.
-              </div>
-            </Row>
-          </li>
+        <ol className={styles.roadmap}>
+          {[
+            [
+              true,
+              "Phase 1",
+              "Mint of 1,111 Krooks, Secondary Listing and Grape Verification for Krook holders.",
+            ],
+            [true, "Phase 2", "Begin Krookenomics token distribution."],
+            [
+              false,
+              "Phase 3",
+              "Feed your Krook - Find a way to exchange Rugged NFTs for tokens without allowing abuse.",
+            ],
+            [false, "Phase 4", "1/1 Auctions with tokens / sol."],
+            [
+              false,
+              "Phase 5",
+              "Henchmen, Take two Of your krooks and a fee in Krook Coins in order to train a henchman, a younger krook, that will have further utility.",
+            ],
+          ].map(([checked, title, content], i) => (
+            <li key={i}>
+              <Row center gap={30}>
+                <div className={styles.checkmark}>
+                  {checked ? (
+                    <Image
+                      {...checkmark}
+                      width="38"
+                      height="38"
+                      alt="Checkmark checked"
+                    />
+                  ) : (
+                    <Image
+                      {...checkmarkOff}
+                      width="38"
+                      height="38"
+                      alt="Checkmark unckecked"
+                    />
+                  )}
+                </div>
+                <div>
+                  <h4>{title}</h4>
+                  {content}
+                </div>
+              </Row>
+            </li>
+          ))}
         </ol>
       </Wrapper>
 

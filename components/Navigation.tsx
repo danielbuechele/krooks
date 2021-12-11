@@ -7,6 +7,8 @@ import React from "react";
 import Row from "./Row";
 import Discord from "./Discord";
 import Twitter from "./Twitter";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import Box from "./Box";
 
 export default function Navigation() {
   return (
@@ -22,19 +24,29 @@ export default function Navigation() {
               <a href="">Rarities</a>
             </li>
             <li>
-              <a href="">Buy</a>
-              <ul>
-                <li>
-                  <a href="">Magic Eden</a>
-                </li>
-                <li>
-                  <a href="">Alpha Art</a>
-                </li>
-              </ul>
+              <DropdownMenu.Root>
+                <DropdownMenu.Trigger className={styles.trigger}>
+                  Buy
+                </DropdownMenu.Trigger>
+                <DropdownMenu.Content className={styles.menu} align="end">
+                  <Box>
+                    <DropdownMenu.Item className={styles.item}>
+                      <a href="">Magic Eden</a>
+                    </DropdownMenu.Item>
+                    <DropdownMenu.Item className={styles.item}>
+                      <a href="">Alpha Art</a>
+                    </DropdownMenu.Item>
+                  </Box>
+                </DropdownMenu.Content>
+              </DropdownMenu.Root>
+            </li>
+            <li>
+              <Discord />
+            </li>
+            <li>
+              <Twitter />
             </li>
           </ul>
-          <Discord />
-          <Twitter />
         </Row>
       </Row>
     </Wrapper>
