@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 4 36" style="enable-background:new 0 0 4 36;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#3778F5;}
+	.st2{fill:#3778F5;}
+	.st3{fill:#5C91F8;}
+	.st4{fill:#5D91F8;}
+	.st5{fill:#FFFFFF;fill-opacity:0.1;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#5E92F8;}
+	.st7{fill:#4481F5;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#4481F5;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2" y1="36" x2="2" y2="0">
+	<stop  offset="0" style="stop-color:#628FF3"/>
+	<stop  offset="1" style="stop-color:#4481F5"/>
+</linearGradient>
+<rect class="st0" width="4" height="36"/>
+<path class="st1" d="M1,21H0v1h1v1H0v1h1v1H0v1h1v-1h1v1h1v1H2v1H1v-1H0v1h1v1H0v1h1v-1h1v1h1v-1H2v-1h1v-1h1v-1H3v-1h1v-1H3v-1H2
+	v-1H1V21z M3,24v1H2v-1H3z"/>
+<path class="st2" d="M1,31H0v1h1V31z"/>
+<path class="st2" d="M2,33h1v1H2V33z"/>
+<path class="st2" d="M0,35h1v1H0V35z"/>
+<path class="st2" d="M2,31h1v1H2V31z"/>
+<path class="st3" d="M1,14H0v1h1V14z"/>
+<path class="st4" d="M2,16h1v1H2V16z"/>
+<path class="st4" d="M2,18h1v1H2V18z"/>
+<path class="st5" d="M0,20h1v1H0V20z"/>
+<path class="st6" d="M2,21H1v1H0v1h1v-1h1v1h1v1H2v1H1v-1H0v1h1v1H0v1h1v1H0v1h1v-1h1v-1h1v-1h1v-1H3v-1h1v-1H3v-1H2V21z M3,25H2v1
+	h1V25z"/>
+<path class="st4" d="M2,21v-1h1v1H2z"/>
+<path class="st4" d="M1,18H0v1h1V18z"/>
+<path class="st7" d="M1,0h1v1H1V0z"/>
+<path class="st7" d="M1,2H0V1h1V2z"/>
+<path class="st7" d="M2,2V1h1v1H2z"/>
+<path class="st8" d="M3,3H2V2H1v1H0v1h1v1H0v1h1V5h1v1h1v1H2v1H1V7H0v1h1v1H0v1h1V9h1v1h1v1H2v1h1v-1h1v-1H3V9h1V8H3V7h1V6H3V5h1V4
+	H3V3z M2,4h1v1H2V4z M3,8H2v1h1V8z"/>
+<path class="st7" d="M3,3h1V2H3V3z"/>
+<path class="st7" d="M3,13H2v1h1V13z"/>
+<path class="st7" d="M0,15h1v1H0V15z"/>
+<path class="st7" d="M2,15h1v1H2V15z"/>
+<path class="st7" d="M0,11h1v1H0V11z"/>
+</svg>

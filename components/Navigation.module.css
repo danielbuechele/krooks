@@ -6,12 +6,31 @@
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    margin-bottom: 20px;
+    padding: 14px 0;
+  }
+
+  .hiddenMobile {
+    display: none;
+  }
+}
+
 .ul {
   display: flex;
   flex-direction: row;
   gap: 16px;
   font-weight: bold;
   align-items: flex-start;
+  color: #c1d2f9;
+}
+
+.ul > *:hover,
+.ul > *:active,
+.ul > *:focus,
+.trigger[data-state="open"] {
+  color: white;
 }
 
 .menu {
@@ -23,8 +42,13 @@
   cursor: pointer;
 }
 
-.item {
+.item a {
   padding: 10px 15px;
+  padding-right: 40px;
+  display: block;
+}
+
+.item {
   border-top: 2px dotted #6b96f6;
 }
 

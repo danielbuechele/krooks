@@ -9,6 +9,12 @@
   margin-bottom: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .hero h1 {
+    font-size: 55px;
+  }
+}
+
 .hero h2 {
   font-size: 24px;
   margin: 0;
@@ -19,29 +25,54 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .heroButtons {
+    margin: 60px 0;
+  }
+}
+
 .about {
   background: #2055b4;
   padding-bottom: 120px;
   padding-top: 120px;
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 .krookenomics {
   background-color: #12326a;
-
-  background-image: url("/about.png"),
-    linear-gradient(#2055b4 0px, transparent 100px);
+  background-image: url("/gradient2.svg"),
+    linear-gradient(#2055b4 0px, #12326a 100%);
   background-position: top;
   background-repeat: repeat-x;
-  background-size: auto 100px;
+  background-size: auto 105px;
 
   padding-bottom: 120px;
   padding-top: 160px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 44px;
+@media screen and (max-width: 767px) {
+  .krookenomicsRow {
+    flex-direction: column-reverse;
+    gap: 0 !important;
+  }
+}
+
+.coin {
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .coin {
+    margin-top: 20px;
+    align-self: center;
+    width: 66px;
+  }
 }
 
 .krookenomicsContent h3 {
@@ -59,6 +90,13 @@
   background-color: #081730;
   padding-bottom: 120px;
   padding-top: 120px;
+}
+
+@media screen and (max-width: 767px) {
+  .faq {
+    padding-bottom: 0px;
+    padding-top: 80px;
+  }
 }
 
 .faq .faqBox {
@@ -90,6 +128,12 @@
 .roadmap li {
   padding: 45px 0;
   border-bottom: 4px dotted #2055b4;
+}
+
+@media screen and (max-width: 767px) {
+  .roadmap li {
+    padding: 25px 0;
+  }
 }
 
 .roadmap li:last-child {
@@ -171,4 +215,10 @@ div .utilityBox {
 
 .dynacmisBottom {
   margin-bottom: 20px;
+}
+
+.supplyRow,
+.henchmenRow {
+  overflow-x: scroll;
+  max-width: 100%;
 }

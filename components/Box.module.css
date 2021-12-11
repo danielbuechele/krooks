@@ -3,8 +3,8 @@
   border-width: 6px 9px 9px 6px;
   border-image-repeat: repeat;
   border-image-slice: 6 9 9 6;
-  position: relative;
   border-image-outset: 6px 9px 9px 6px;
+  position: relative;
   margin: 6px 9px 9px 6px;
   display: flex;
 }

@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       <Wrapper className={styles.hero}>
         <h1>Welcome to the Krooks!</h1>
         <h2>An collection of 1,131 Krook NFTs on the Solana Blockchain</h2>
-        <Row className={styles.heroButtons} gap={20}>
+        <Row className={styles.heroButtons} gap={30}>
           <Button label="Discord" href="http://discord.gg/9gcv4dBetm" />
           <Button label="Twitter" href="https://twitter.com/KrooksSol" />
         </Row>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
           <Image {...krookenomics} alt="Krookenomics logo" />
         </div>
         <div className={styles.krookenomicsContent}>
-          <div className={styles.row}>
+          <Row gap={44} className={styles.krookenomicsRow}>
             <div>
               <p>
                 We will be airdropping 10 KROOK per unlisted KROOK daily. This
@@ -84,13 +84,13 @@ const Home: NextPage = () => {
                 month.
               </p>
             </div>
-            <div style={{ flexShrink: 0 }}>
+            <div className={styles.coin}>
               <Image {...coin} alt="KROOK coin" objectFit="fill" />
             </div>
-          </div>
+          </Row>
 
           <h3>Supply</h3>
-          <Row gap={20} equal>
+          <Row gap={20} equal className={styles.supplyRow}>
             {[
               [
                 <>
@@ -146,7 +146,7 @@ const Home: NextPage = () => {
             </Box>
           ))}
           <h3>Henchmen Dynamics</h3>
-          <Row gap={44} equal>
+          <Row gap={44} equal className={styles.henchmenRow}>
             {[
               <>
                 <h5>1 Krook</h5>
@@ -296,8 +296,8 @@ const Home: NextPage = () => {
             height={30}
           />
           <Row gap={30}>
-            <Discord fill="white" />
-            <Twitter fill="white" />
+            <Discord />
+            <Twitter />
           </Row>
         </Row>
       </Wrapper>

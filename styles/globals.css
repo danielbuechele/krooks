@@ -22,10 +22,9 @@ body {
   font-family: "Pixel Operator";
   background-color: #6591f4;
   font-size: 22px;
-  background-image: url("/header.png"),
-    linear-gradient(#5382ed 0px, transparent 250px);
+  background-image: url("/top.svg");
   image-rendering: pixelated;
-  background-size: auto 250px;
+  background-size: auto 252px;
   background-repeat: repeat-x;
   background-position-y: 0;
 }
@@ -67,10 +66,14 @@ li {
 hr {
   height: 12px;
   border: 0;
-  background-image: url("/hr.png");
-  background-size: auto 100%;
-  image-rendering: pixelated;
+  /* background-image: url("/hr.png"); */
+  /* background-size: auto 100%; */
+  /* image-rendering: pixelated; */
+  border-top: 4px dotted #2f5b58;
+  border-bottom: 4px dotted #2f5b58;
+  height: 0;
   margin: 60px 0;
+  /* border-image-slice: 4 0 0 0; */
 }
 
 button {
@@ -79,4 +82,6 @@ button {
   padding: auto;
   background: initial;
   border: initial;
+  margin: 0;
+  padding: 0;
 }
