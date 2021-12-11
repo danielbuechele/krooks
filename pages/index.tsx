@@ -84,7 +84,7 @@ const Home: NextPage = () => {
           </Row>
 
           <h3>Supply</h3>
-          <Row gap={20} equal className={styles.supplyRow}>
+          <Row gap={20} equal mobileVertical>
             {[
               [
                 <>
@@ -140,7 +140,7 @@ const Home: NextPage = () => {
             </Box>
           ))}
           <h3>Henchmen Dynamics</h3>
-          <Row gap={44} equal className={styles.henchmenRow}>
+          <Row gap={44} equal mobileVertical>
             {[
               <>
                 <h5>1 Krook</h5>

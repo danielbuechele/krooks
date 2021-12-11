@@ -8,6 +8,7 @@ export default function Row({
   gap,
   equal,
   className,
+  mobileVertical,
 }: {
   children: any;
   gap?: number;
@@ -15,6 +16,7 @@ export default function Row({
   spread?: boolean;
   equal?: boolean;
   className?: string;
+  mobileVertical?: boolean;
 }) {
   return (
     <div
@@ -25,7 +27,7 @@ export default function Row({
       }}
       className={`${styles.container} ${className ?? ""} ${
         equal ? styles.equal : ""
-      }`}
+      } ${mobileVertical ? styles.vertical : ""}`}
     >
       {children}
     </div>

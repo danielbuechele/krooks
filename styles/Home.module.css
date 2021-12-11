@@ -179,6 +179,15 @@ div .henchmenBox {
   pointer-events: none;
 }
 
+@media screen and (max-width: 767px) {
+  .henchmenBox::after {
+    top: 100%;
+    left: 50%;
+    margin-left: -23px;
+    margin-top: 14px;
+  }
+}
+
 .henchmenBox:nth-child(1)::after,
 .henchmenBox:nth-child(2)::after {
   content: "+";
@@ -192,7 +201,7 @@ div .henchmenBox {
   font-weight: normal;
   font-size: 100%;
   flex-grow: 1;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 div .supplyBox {
@@ -225,10 +234,4 @@ div .utilityBox {
 
 .dynacmisBottom {
   margin-bottom: 20px;
-}
-
-.supplyRow,
-.henchmenRow {
-  overflow-x: scroll;
-  max-width: 100%;
 }
